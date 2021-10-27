@@ -281,3 +281,22 @@ main nav {
   margin-right: 1px;
   color: green;
 }
+
+/*  Footer */
+
+footer {
+  background-color: #faf1ed;
+  height: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+
+footer img {
+  width: 70px;
+}
