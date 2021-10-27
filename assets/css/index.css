@@ -96,7 +96,7 @@ main nav {
   display: flex;
 }
 
-main nav ul {
+.main-nav1 {
   width: 100%;
   display: flex;
   gap: 10px;
@@ -105,16 +105,16 @@ main nav ul {
 
 .main-nav {
   flex: 1;
-  text-align: center;
+  padding: 10px 25px;
   border: black 1px solid;
   border-radius: 10px;
-  height: 67px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .main-nav a {
+  font-family: "Trip sans Reg";
   line-height: 20px;
   color: black;
 }
@@ -155,15 +155,30 @@ main nav ul {
   object-fit: cover;
   object-position: center;
 }
-/* second-main-nav */
+/* main-nav2 */
 
-.second-main-nav a {
+.underPicture {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.underPicture span {
+  margin-top: 10px;
   font-size: 12px;
-  line-height: 14px;
+}
+
+.main-nav2 {
+  width: 40%;
+}
+
+.main-nav2 a {
+  font-size: 12px;
   padding-right: 10px;
 }
 
-.second-main-nav a:hover {
+.main-nav2 a:hover {
   text-decoration-line: underline;
 }
 
