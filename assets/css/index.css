@@ -35,7 +35,7 @@ h6 {
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 p {
@@ -269,4 +269,15 @@ main nav {
   font-size: 14px;
   line-height: 17px;
   color: #333333;
+}
+
+/* Section repos  */
+
+#repos {
+  margin-top: 80px;
+}
+
+.places-text i {
+  margin-right: 1px;
+  color: green;
 }
