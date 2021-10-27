@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -137,12 +137,22 @@ main nav ul {
   gap: 3px;
 }
 
+.one {
+  width: 60%;
+}
+
+.two {
+  width: 40%;
+}
 .one img {
-  height: 450px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .two img {
-  height: 223.5px;
+  height: calc(50% - 1.5px);
   width: 100%;
   object-fit: cover;
   object-position: center;
