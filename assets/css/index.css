@@ -18,9 +18,17 @@ h1 {
 }
 
 h3 {
+  font-family: "Trip sans Med";
+  font-weight: bold;
   margin-top: 20px;
   font-size: 28px;
   line-height: 33px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
 }
 
 p {
@@ -183,3 +191,36 @@ main nav {
 }
 
 /* MAIN H3 P */
+
+/* section les immanquables  */
+
+#immanquables {
+  margin-top: 50px;
+}
+
+.carrousselle-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+.carousselle-text {
+  width: 27%;
+  height: 100%;
+  border: 1px solid;
+}
+
+.carousselle-text a {
+  text-decoration: underline;
+}
+
+.carousselle-text p {
+  margin-bottom: 20px;
+}
+
+.carousselle {
+  border: 1px solid;
+  width: 73%;
+  height: 100%;
+}
