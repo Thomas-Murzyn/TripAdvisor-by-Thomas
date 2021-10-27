@@ -2,6 +2,7 @@
 
 body {
   font-size: 16px;
+  font-family: "Trip Sans Reg";
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
 h1 {
   font-size: 54px;
   line-height: 64px;
-  letter-spacing: 0.9px;
+  font-family: "Trip Sans Med";
   font-weight: bold;
 }
 
@@ -23,6 +24,7 @@ h3 {
 }
 
 p {
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 20px;
   font-size: 20px;
   line-height: 24px;
