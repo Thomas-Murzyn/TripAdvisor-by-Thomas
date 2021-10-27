@@ -31,6 +31,13 @@ h5 {
   font-weight: bold;
 }
 
+h6 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 20px;
@@ -208,7 +215,6 @@ main nav {
 .carousselle-text {
   width: 27%;
   height: 100%;
-  border: 1px solid;
 }
 
 .carousselle-text a {
@@ -220,7 +226,47 @@ main nav {
 }
 
 .carousselle {
-  border: 1px solid;
   width: 73%;
   height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.places {
+  width: calc(97% / 3);
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.places-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.places-picture {
+  position: relative;
+}
+
+.coeur {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.places-text span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
 }
