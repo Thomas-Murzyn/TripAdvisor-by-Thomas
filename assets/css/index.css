@@ -74,12 +74,14 @@ header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 10px;
 }
 
 .nav-link {
   font-weight: bold;
-  line-height: 20px;
+  padding: 10px 0;
   color: black;
+  font-size: 16px;
 }
 
 .nav-button {
@@ -336,8 +338,8 @@ footer img {
   }
 }
 
-/* @media (max-width: 1024px) {
-  .nav-link i {
+@media (max-width: 1024px) {
+  .aspan {
     display: none;
   }
-} */
+}
