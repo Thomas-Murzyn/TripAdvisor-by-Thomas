@@ -65,6 +65,10 @@ header {
   align-items: center;
 }
 
+.balise-hidden {
+  display: none;
+}
+
 header img {
   width: 200px;
 }
@@ -353,5 +357,18 @@ footer img {
 
   .div-p {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 150px;
+  }
+  header nav {
+    display: none;
+  }
+
+  .balise-hidden {
+    display: inherit;
   }
 }
