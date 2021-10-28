@@ -206,6 +206,14 @@ main nav {
 
 /* MAIN H3 P */
 
+.div-p {
+  width: 50%;
+}
+
+.div-p p {
+  text-align: justify;
+}
+
 /* section les immanquables  */
 
 #immanquables {
@@ -341,5 +349,9 @@ footer img {
 @media (max-width: 1024px) {
   .aspan {
     display: none;
+  }
+
+  .div-p {
+    width: 100%;
   }
 }
