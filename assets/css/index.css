@@ -111,13 +111,8 @@ h1 span {
   color: #fe5d5d;
 }
 
-main nav {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-}
-
 .main-nav1 {
+  margin-top: 20px;
   width: 100%;
   display: flex;
   gap: 10px;
@@ -333,7 +328,6 @@ footer img {
   }
 
   .main-nav {
-    /* flex-shrink: 0; */
     width: calc(98% / 4);
   }
 
@@ -361,6 +355,10 @@ footer img {
 }
 
 @media (max-width: 768px) {
+  .main-image {
+    height: 35vh;
+  }
+
   header img {
     width: 150px;
   }
@@ -370,5 +368,28 @@ footer img {
 
   .balise-hidden {
     display: inherit;
+  }
+
+  .main-nav1 {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .main-nav {
+    flex: 1;
+    padding-right: 100px;
+    justify-content: flex-start;
+  }
+
+  .one {
+    width: 100%;
+  }
+
+  .two {
+    display: none;
   }
 }
