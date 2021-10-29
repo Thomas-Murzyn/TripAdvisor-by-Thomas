@@ -413,14 +413,9 @@ footer img {
   text-align: center;
 }
 
-#modal h2 {
-  font-size: 30px;
-  padding-bottom: 30px;
-}
-
 #contact {
   color: black;
-  padding: 40px 0;
+  position: relative;
   background-color: white;
   border-radius: 20px;
   border: 2px solid;
@@ -432,16 +427,34 @@ footer img {
   gap: 20px;
 }
 
+#contact i {
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+#contact h2 {
+  padding-top: 60px;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
 #contact input {
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   text-decoration: none;
   border-radius: 10px;
   width: 50%;
   height: 5%;
   text-align: center;
+  border: black 1px solid;
 }
 
 #contact textarea {
+  border: black 1px solid;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   text-decoration: none;
   border-radius: 10px;

@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.add("hidden-form");
   });
 
+  document.getElementById("close-button").addEventListener("click", (event) => {
+    modal.classList.remove("hidden-form");
+  });
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
