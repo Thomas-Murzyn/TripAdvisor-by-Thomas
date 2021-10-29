@@ -393,3 +393,29 @@ footer img {
     display: none;
   }
 }
+
+/* FORM */
+
+#modal {
+  width: 50%;
+  height: 500px;
+  background-color: gray;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#modal h2 {
+  font-size: 35px;
+  color: white;
+}
+
+#contact {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
