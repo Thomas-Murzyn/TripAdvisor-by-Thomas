@@ -13,9 +13,45 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
 
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
+
+    <div id="modal">
+
+
+      <form action="" id="contact">
+        <h2>Connectez-vous pour profiter pleinement de Tripadvisor.</h2>
+
+        <input
+          type="text"
+          name="firstname"
+          placeholder="fistname"
+          id="firstname"
+        />
+
+        <input
+          type="text"
+          name="lastname"
+          placeholder="lastname"
+          id="lastname"
+        />
+
+        <input type="email" name="email" placeholder="email" id="email" />
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Ecrivez votre message ici."
+        ></textarea>
+      </form>
+    </div>
+
+
     <header class="container">
       <i class="fas fa-bars balise-hidden"></i>
       <img src="./assets/images/Tripadvisorlogo.svg" alt="logo TripAdvisor" />
@@ -38,7 +74,7 @@
             ><i class="far fa-bell"></i><span class="aspan"> Alertes</span></a
           >
         </div>
-        <button class="nav-button">Connectez-vous</button>
+        <button id="get-form" class="nav-button">Connectez-vous</button>
       </nav>
 
       <i class="fas fa-search balise-hidden"></i>
@@ -315,37 +351,7 @@
       </p>
     </footer>
 
-    <div id="modal">
 
-
-        <form action="" id="contact">
-          <h2>Connectez-vous pour profiter pleinement de Tripadvisor.</h2>
-
-          <input
-            type="text"
-            name="firstname"
-            placeholder="fistname"
-            id="firstname"
-          />
-
-          <input
-            type="text"
-            name="lastname"
-            placeholder="lastname"
-            id="lastname"
-          />
-
-          <input type="email" name="email" placeholder="email" id="email" />
-
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Ecrivez votre message ici."
-          ></textarea>
-        </form>
-      </div>
     </div>
   </body>
 </html>
