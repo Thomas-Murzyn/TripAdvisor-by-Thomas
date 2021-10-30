@@ -126,7 +126,7 @@ h1 span {
 .main-nav {
   box-sizing: border-box;
   width: calc(100% / 6);
-  padding: 10px 25px;
+  padding: 15px 15px;
   border: black 1px solid;
   border-radius: 10px;
   display: flex;
@@ -226,7 +226,6 @@ h1 span {
 .carrousselle-wrapper {
   margin-top: 20px;
   width: 100%;
-  height: 300px;
   display: flex;
 }
 
@@ -271,8 +270,8 @@ h1 span {
 }
 
 .coeur {
-  width: 40px;
-  height: 40px;
+  width: 12.82%;
+  height: 17.53%;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -319,11 +318,91 @@ footer img {
   width: 70px;
 }
 
+/* FORM */
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contact {
+  color: black;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid;
+  width: 30vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#contact i {
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+#contact h2 {
+  padding-top: 60px;
+  font-size: 2vw;
+  padding-bottom: 30px;
+}
+
+#contact input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 50%;
+  height: 5%;
+  text-align: center;
+  border: black 1px solid;
+}
+
+#contact textarea {
+  border: black 1px solid;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 60%;
+  height: 30%%;
+  text-align: center;
+}
+
+#contact button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 30%;
+  height: 7%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hidden-form {
+  display: flex !important;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1184px) {
   .container {
-    width: 95vw;
+    width: 95%;
   }
 
   .main-nav1 {
@@ -377,16 +456,20 @@ footer img {
   .main-nav1 {
     width: 100%;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 10px;
     overflow: hidden;
     overflow-x: scroll;
   }
 
   .main-nav {
-    flex: 1;
-    padding-right: 100px;
-    justify-content: flex-start;
+    width: calc((100% - 20px) / 2);
+    padding: 0 100px 0 10px;
+    justify-content: space-between;
+  }
+
+  .main-nav i {
+    display: none;
   }
 
   .one {
@@ -396,84 +479,26 @@ footer img {
   .two {
     display: none;
   }
-}
 
-/* FORM */
+  .carrousselle-wrapper {
+    flex-direction: column;
+  }
 
-#modal {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  .carousselle-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-#contact {
-  color: black;
-  position: relative;
-  background-color: white;
-  border-radius: 20px;
-  border: 2px solid;
-  width: 25%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
+  .carousselle {
+    width: 100%;
+  }
 
-#contact i {
-  font-size: 25px;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
+  .underPicture {
+    display: none;
+  }
 
-#contact h2 {
-  padding-top: 60px;
-  font-size: 30px;
-  padding-bottom: 30px;
-}
-
-#contact input {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  text-decoration: none;
-  border-radius: 10px;
-  width: 50%;
-  height: 5%;
-  text-align: center;
-  border: black 1px solid;
-}
-
-#contact textarea {
-  border: black 1px solid;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  text-decoration: none;
-  border-radius: 10px;
-  width: 60%%;
-  height: 30%%;
-  text-align: center;
-}
-
-#contact button {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  width: 30%;
-  height: 7%;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hidden-form {
-  display: flex !important;
+  #contact {
+    width: 80vw;
+    height: 90vh;
+  }
 }
