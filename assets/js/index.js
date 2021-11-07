@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const response = await axios.post(
-      "https://git.heroku.com/tripadvisor-backend-by-thomas.git/form",
+      "https://tripadvisor-backend-by-thomas.herokuapp.com/",
       data
     );
     console.log(response);
